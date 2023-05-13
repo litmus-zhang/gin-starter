@@ -10,6 +10,9 @@ func main() {
 		})
 	})
 
-	router.Run()
+	if err := router.Run(); err != nil {
+		panic("Application not Running")
+
+	}
 
 }
