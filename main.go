@@ -15,11 +15,6 @@ type Recipe struct {
 
 func main() {
 	router := gin.Default()
-	router.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "Hello worldle",
-		})
-	})
 
 	if err := router.Run(); err != nil {
 		panic("Application not Running")
